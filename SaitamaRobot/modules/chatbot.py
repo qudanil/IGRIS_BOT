@@ -19,6 +19,7 @@ from telegram.utils.helpers import mention_html
 CoffeeHouseAPI = API(AI_API_KEY)
 api_client = LydiaAI(CoffeeHouseAPI)
 
+session = lydia.create_session("en")
 
 @run_async
 @user_admin
