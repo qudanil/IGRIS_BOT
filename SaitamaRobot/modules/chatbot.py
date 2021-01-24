@@ -21,6 +21,7 @@ api_client = LydiaAI(CoffeeHouseAPI)
 
 session = lydia.create_session("en")
 
+
 @run_async
 @user_admin
 @gloggable
