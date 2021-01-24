@@ -51,16 +51,14 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hello {},My Name is IGRIS
-𝐈 𝐀𝐌 𝐀 𝐑𝐎𝐘𝐀𝐋 𝐊𝐍𝐈𝐆𝐇𝐓 𝐅𝐑𝐎𝐌 𝐒𝐎𝐋𝐎 𝐋𝐄𝐕𝐄𝐋𝐈𝐍𝐆.
-I will help you manage your group.
-TO KNOW MY COMMANDS CLICK /help.
+Hello {}, Saya MEGURI
+Saya adalah pelayan setia dari @Danielsins .
+Saya akan membantu mengelola grup mu.
+Untuk melihat perintah bisa klik /help.
 """
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm a Shadow From Solo Leveling,I will help you manage your groups! Have a look at the following for an idea of some of \
-the things I can help you with.
 
 *Main* commands available:
  • /help: PM's you this message.
@@ -178,17 +176,17 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(                   
                           [[
                               InlineKeyboardButton(
-                              text="🔥Add IGRIS To Your Group🔥",
+                              text="🔥Add MEGURI To Your Group🔥",
                               url="t.me/{}?startgroup=true".format(
                                   context.bot.username))
                           ], 
                           [
                               InlineKeyboardButton(
-                              text="🍁Support Group🍁",
-                              url=f"https://t.me/IGRISBOTSUPPORT"),
+                              text="🍁OWNER🍁",
+                              url=f"https://t.me/Danielsins"),
                               InlineKeyboardButton(
-                              text="✨Updates Channel✨",
-                              url="https://t.me/IGRISROBOT_SUPPORT")
+                              text="✨Channel✨",
+                              url="https://t.me/Danielsplaylist")
                           ]])) 
     else:
         update.effective_message.reply_text(
